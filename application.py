@@ -13,6 +13,15 @@ def hello_world():
     return 'hello world'
 
 
+# Create a function that takes the user to recommended movies
+@app.route("/recommender")
+def recommender():
+    some_movies = ["movie1", "movie2", "movie3"]
+    return f'{some_movies}'
+
+# If you go to the recommender url (http://127.0.0.1:<port>/recommender) you should see the movies there
+
+
 # To run and debug from only this script:
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
