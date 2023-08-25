@@ -10,9 +10,9 @@
     <h1>Movie Recommendations</h1>
     <h3>The following movies have been recommended to you based on your ratings</h3>
     <ul>
-        <li>{{movies[0]}}</li>
-        <li>{{movies[1]}}</li>
-        <li>{{movies[2]}}</li>
+        {% for movie in movies%}
+        <li>{{movie}}</li>
+        {% endfor %}
     </ul>
 </body>
 </html>

@@ -25,7 +25,7 @@ def index():
 # Create a function that takes the user to recommended movies
 @app.route("/recommender")
 def recommender():
-    some_movies = ["movie1", "movie2", "movie3"]
+    some_movies = ["movie1", "movie2", "movie3", "movie4"]
     # We render the recommender.html template but also make it dynamic
     # by carrying the movies variable
     return render_template("recommender.html", movies=some_movies)
