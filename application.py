@@ -18,7 +18,14 @@ def hello_world():
 @app.route("/recommender")
 def recommender():
     some_movies = ["movie1", "movie2", "movie3"]
-    return f'{some_movies}'
+    # Here we want to have a better looking list
+    # We use f-string and enclose variables using jinja tags {}
+    return f'''<ul>
+                    <li>{some_movies[0]}</li>
+                    <li>{some_movies[1]}</li>
+                    <li>{some_movies[2]}</li>
+                </ul>
+'''
 
 # If you go to the recommender url (http://127.0.0.1:<port>/recommender) you should see the movies there
 
