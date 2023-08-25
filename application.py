@@ -10,7 +10,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return 'hello world'
+    # Introduce html tags. Here we want to make hello world a header h1
+    return '<h1>hello world</h1>'
 
 
 # Create a function that takes the user to recommended movies
